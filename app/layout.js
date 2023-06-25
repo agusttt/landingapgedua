@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+// untuk mengimport variabel class dr component poppins di folder utils
+import { poppins } from "@/lib/utils";
+// untuk mengimport variabel class dr component poppins di folder utils
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   )
 }

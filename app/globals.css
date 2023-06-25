@@ -16,12 +16,9 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body {}
+
+.container {
+  @apply max-w-[1264px];
+  /* @apply digunakan untuk memanggil kelas tailwin dengan property "max-w-" dan [1080px] merupakan value pixel untuk custom size container*/
 }
